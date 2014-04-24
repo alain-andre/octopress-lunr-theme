@@ -29,7 +29,7 @@ This part explains how to quickly install the plugin as well as the structures t
     $ git commit -m "lunr-js-search Installation"
 
 
-Voilà, you just need now to do a `bundle exec rake preview` to see everythings working. Now it's time to go back to your master branch and check if there is canges at your **source/_includes/custom/head.html** file.
+Voilà, you just need now to do a `bundle exec rake preview` to see everythings working. Now it's time to go back to your master branch and check if there is changes at your **source/_includes/custom/head.html** file.
 
     $ git checkout master
     $ git merge octopress-lunr-theme
