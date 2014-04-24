@@ -11,30 +11,29 @@ You can execute the following commands to gain a lot of time.
 
 This part explains how to quickly install the plugin as well as the structures that it needs. Let's start by working on a new branch just in case your theme in place does not support this quick installation.
 
-```bash Plugin installation
-  $ git checkout -b octopress-lunr-theme
-  $ sed -i "/^end/c\  gem 'json'\n  gem 'nokogiri'\nend" Gemfile
-  $ bundle install
-  $ git clone https://github.com/alain-andre/octopress-lunr-theme.git .themes/octopress-lunr-theme
-  $ # If you do not have a theme installed (first install), you must command : bundle exec rake install
-  $ bundle exec rake install["octopress-lunr-theme"] # In any case
-  $ bundle exec rake new_page['search']
-  mkdir -p source/search
-  Creating new page: source/search/index.markdown
-  $ echo "{% include custom/lunr_search/entries.html %}" >> source/search/index.markdown
-  $ cp .themes/octopress-lunr-theme/plugins/octopress_lunr_theme.rb plugins/octopress_lunr_theme.rb
-  $ sed -i "/^simple_search:/c\simple_search: #" _config.yml
-  $ sed -i "s/^default_asides: \[/default_asides: \[custom\/asides\/lunr_search.html, /" _config.yml
-  $ bundle exec rake generate
-  $ git add -A
-  $ git commit -m "lunr-js-search Installation"
-```
+    $ git checkout -b octopress-lunr-theme
+    $ sed -i "/^end/c\  gem 'json'\n  gem 'nokogiri'\nend" Gemfile
+    $ bundle install
+    $ git clone https://github.com/alain-andre/octopress-lunr-theme.git .themes/octopress-lunr-theme
+    $ # If you do not have a theme installed (first install), you must command : bundle exec rake install
+    $ bundle exec rake install["octopress-lunr-theme"] # In any case
+    $ bundle exec rake new_page['search']
+    mkdir -p source/search
+    Creating new page: source/search/index.markdown
+    $ echo "{% include custom/lunr_search/entries.html %}" >> source/search/index.markdown
+    $ cp .themes/octopress-lunr-theme/plugins/octopress_lunr_theme.rb plugins/octopress_lunr_theme.rb
+    $ sed -i "/^simple_search:/c\simple_search: #" _config.yml
+    $ sed -i "s/^default_asides: \[/default_asides: \[custom\/asides\/lunr_search.html, /" _config.yml
+    $ bundle exec rake generate
+    $ git add -A
+    $ git commit -m "lunr-js-search Installation"
+
 
 Voilà, you just need now to do a `bundle exec rake preview` to see everythings working. Now it's time to go back to your master branch and check if there is canges at your **source/_includes/custom/head.html** file.
-```bash
-  $ git checkout master
-  $ git merge octopress-lunr-theme
-```
+
+    $ git checkout master
+    $ git merge octopress-lunr-theme
+
 
 ## Pour les français
 J'ai fais un [post](http://alain-andre.fr/blog/2014/04/24/installer-lunr-search-sur-octopress/) sur mon blog qui est plus détaillé.
