@@ -10,7 +10,7 @@ This theme only modify the **source/_includes/custom/head.html** file.
 You can execute the following commands to gain a lot of time.
 
 This part explains how to quickly install the plugin as well as the structures that it needs. Let's start by working on a new branch just in case your theme in place does not support this quick installation.
-{% raw %}
+
 ```bash Plugin installation
   $ git checkout -b octopress-lunr-theme
   $ sed -i "/^end/c\  gem 'json'\n  gem 'nokogiri'\nend" Gemfile
@@ -29,7 +29,6 @@ This part explains how to quickly install the plugin as well as the structures t
   $ git add -A
   $ git commit -m "lunr-js-search Installation"
 ```
-{% endraw %}
 
 Voilà, you just need now to do a `bundle exec rake preview` to see everythings working. Now it's time to go back to your master branch and check if there is canges at your **source/_includes/custom/head.html** file.
 ```bash
