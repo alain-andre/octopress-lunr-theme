@@ -38,4 +38,4 @@ Voilà, you just need now to do a `bundle exec rake preview` to see everythings 
 
 
 ## Pour les français
-J'ai fais un [post](http://alain-andre.fr/blog/2014/04/24/installer-lunr-search-sur-octopress) sur mon blog qui est plus détaillé.
+J'ai fais un [post](http://www.alain-andre.fr/blog/2014/04/24/installer-lunr-search-sur-octopress) sur mon blog qui est plus détaillé.
