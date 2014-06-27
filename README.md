@@ -5,7 +5,7 @@ All the needed for lunrjs search on octopress. in easy steps.
 
 This post is inspired from [jekyll-lunr-js-search](https://github.com/slashdotdash/jekyll-lunr-js-search) and [octopress-lunr-js-search](https://github.com/yortz/octopress-lunr-js-search/blob/master/plugins/search_generator.rb). I couldn't find easy plugins to install/use so I decided to create a minimalist theme that integrated it directly. [This theme](https://github.com/alain-andre/octopress-lunr-theme) is based on a structure allowing [Octopress updates](http://octopress.org/docs/updating/).
 
-![Example](http://alain-andre.fr/images/capture.png)
+![Example](http://www.alain-andre.fr/images/capture.png)
 
 ## Plugin installation.
 This theme only modify the **source/_includes/custom/head.html** file.
